@@ -1,0 +1,66 @@
+
+/*[x] The header element should have a 1px, goldenrod border.*/
+header {
+    border: 1px solid goldenrod;
+}
+
+/* [x] Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally. */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 3px 0 3px;
+}
+
+/*[x] Any text in an element with class "disabled" should be colored grey,*/
+.disabled > a {
+    color: grey;
+}
+ 
+/*[x] unless it is an attribute of an anchor tag. If it is an attribute of an anchor tag, it should be colored purple.*/
+a.disabled {
+    color: purple;
+}
+
+/*[x] Any text inside an element with a class of "active" should be colored yellow.*/
+.active {
+    color: yellow;
+}
+
+/*[x] Make the "I'm red" text colored red.*/
+.parent div div {
+    color: red;
+}
+
+/*[x] The sibling h4 of the red element should have a background color of red.*/
+.parent div h4 {
+    background-color:red;
+}
+
+/*[ ] Make the "I'm blue" text colored blue.*/
+/* This is the part that isn't working */
+.parent div div:last-child {
+    color: blue;
+}
+
+/*[x] The sibling h4 of the blue element should have background color of blue.*/
+.parent div h4:last-child {
+    background-color: blue;
+}
+
+/*[x] Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
+ .grandparent > h4 {
+    border: 1px solid black;
+ }
+
+ /*[x] Elements with a class of promo should have bold text that is also colored gold.*/
+ .promo {
+     font-weight: bold;
+     color: gold;
+ }
+
+ /* [ ] Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px.*/
